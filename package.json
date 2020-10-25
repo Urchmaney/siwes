@@ -7,7 +7,7 @@
     "siwes": "server.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node bin/server"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Urchmaney/siwes#readme",
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -28,6 +29,7 @@
     "jest": "^26.6.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.10"
   }
 }
