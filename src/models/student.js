@@ -6,9 +6,9 @@ const Student = new Schema({
   university: { type: String, required: true },
   department: { type: String, required: true },
   level: { type: String },
-  maticNo: { type: String },
+  matricNo: { type: String },
   email: { type: String, required: true, unique: true },
   passwordHash: { type: String, required: true },
-});
+}, { timestamps: true });
 
 module.exports = model('students', Student);
