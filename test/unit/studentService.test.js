@@ -36,6 +36,7 @@ describe('Creating student', () => {
       lastName: 'Luke',
       email: 'mm@gmail.com',
       university: 'UNN',
+      matricNo: '122/3332',
       department: 'ece',
       passwordHash: 'sdsdsd',
     };

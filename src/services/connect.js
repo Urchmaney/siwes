@@ -1,6 +1,7 @@
 const { connect, connection } = require('mongoose');
 
 const studentService = require('./studentService');
+const placementRequestService = require('./placmentRequestService');
 
 const mongoConnect = async (URI) => {
   await connect(URI,
@@ -17,6 +18,7 @@ const mongoConnect = async (URI) => {
     });
   return {
     studentService,
+    placementRequestService,
     closeConnect: () => connection.close(),
   };
 };
